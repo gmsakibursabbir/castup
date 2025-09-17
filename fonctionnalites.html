@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+
+    <!-- favicon  -->
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add the global transition CSS -->
+    <link rel="stylesheet" href="styles/global-transitions.css" />
+
+    <!-- Add the global transition script FIRST, before any other scripts -->
+    <script src="js/global-transitions.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="min-h-screen full-bg overflow-x-hidden page-transition">
+    <div id="initial-preloader-bg"></div>
+
+    <!-- header -->
+    <header class="pt-[106px] md:pt-12 md:pb-[78px] relative">
+      <div class="w-full md:max-w-[1152px] mx-auto px-5 md:px-0">
+        <!-- logo -->
+        <a href="index.html" class="absolute top-10 left-1/2 -translate-x-1/2">
+          <img
+            src="./img/cash-logo-white.svg"
+            alt="cash logo white"
+            class="w-[160px] md:w-[218px]"
+          />
+        </a>
+        <!-- button -->
+        <a
+          href="index.html"
+          class="finish-btn px-8 py-[10px] inline-flex flex-row items-center rounded-full gradiant-btn text-[#312C00] text-xs lg:text-lg font-semibold font-poppins shadow-md gap-[5px] lg:gap-4 cursor-pointer return-btn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9"
+            height="15"
+            viewBox="0 0 9 15"
+            fill="none"
+          >
+            <path
+              d="M7.25 1.25L1 7.5L7.25 13.75"
+              stroke="#2D2D2D"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Retour
+        </a>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="relative">
+      <div
+        class="w-full md:max-w-[1152px] mx-auto px-5 md:px-0 pb-[70px] md:pb-[217px] relative z-40"
+      >
+        <h1
+          class="text-[30px] md:text-[44px] font-bold md:font-black degrade-gradiant text-center py-5 md:py-0"
+          class="text-[30px] md:text-[44px] font-bold md:font-black degrade-gradiant text-center py-5 md:py-0"
+        >
+          Fonctionnalités
+        </h1>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-6 md:gap-y-10 md:mt-[51px]"
+          id="card-grid"
+        >
+          <!-- 1 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Optimisation Avancée
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Automatisez vos processus avec notre IA propriétaire qui analyse
+                et optimise en temps réel.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Analytics pro
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Tableau de bord avancé avec métriques en temps réel et
+                prédictions IA.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Élevée"
+                    value="60"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Élevée</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Intégration API
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Connectez tous vos outils avec notre API flexible et connecteurs
+                prêts.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Automatisation workflow
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Créez des workflows personnalisés sans code avec interface
+                drag-and-drop.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Maximale"
+                    value="90"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Maximale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Optimisation Avancée
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Automatisez vos processus avec notre IA propriétaire qui analyse
+                et optimise en temps réel.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Analytics pro
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Tableau de bord avancé avec métriques en temps réel et
+                prédictions IA.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Élevée"
+                    value="60"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Élevée</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Intégration API
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Connectez tous vos outils avec notre API flexible et connecteurs
+                prêts.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Automatisation workflow
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Créez des workflows personnalisés sans code avec interface
+                drag-and-drop.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Maximale"
+                    value="90"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Maximale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Optimisation Avancée
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Automatisez vos processus avec notre IA propriétaire qui analyse
+                et optimise en temps réel.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Analytics pro
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Tableau de bord avancé avec métriques en temps réel et
+                prédictions IA.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Élevée"
+                    value="60"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Élevée</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Intégration API
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Connectez tous vos outils avec notre API flexible et connecteurs
+                prêts.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Automatisation workflow
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Créez des workflows personnalisés sans code avec interface
+                drag-and-drop.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Maximale"
+                    value="90"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Maximale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Optimisation Avancée
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Automatisez vos processus avec notre IA propriétaire qui analyse
+                et optimise en temps réel.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Analytics pro
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Tableau de bord avancé avec métriques en temps réel et
+                prédictions IA.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Élevée"
+                    value="60"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Élevée</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Intégration API
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Connectez tous vos outils avec notre API flexible et connecteurs
+                prêts.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Automatisation workflow
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Créez des workflows personnalisés sans code avec interface
+                drag-and-drop.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Maximale"
+                    value="90"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Maximale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Optimisation Avancée
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Automatisez vos processus avec notre IA propriétaire qui analyse
+                et optimise en temps réel.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Analytics pro
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Tableau de bord avancé avec métriques en temps réel et
+                prédictions IA.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Élevée"
+                    value="60"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Élevée</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Intégration API
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Connectez tous vos outils avec notre API flexible et connecteurs
+                prêts.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Moyenne"
+                    value="10"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Moyenne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div
+            class="card group w-full bg-[rgba(255_255_255/_0.80)] rounded-xl shadow-lg overflow-hidden relative transition-transform"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./img/thubm-yt.png"
+                alt="YouTube Thumbnail Design"
+                class="w-full h-[85px] md:h-[154px] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-cover-blur opacity-0 transition duration-300 group-hover:opacity-100"
+              ></div>
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-white text-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              >
+                <img
+                  src="./img/lock.svg"
+                  alt="lock"
+                  class="w-[26px] md:w-[46px]"
+                />
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div
+              class="p-[10px] md:p-5 space-y-[6px] md:space-y-[10px] h-[143px] md:h-[250px]"
+            >
+              <h3
+                class="text-xs md:text-[22px] font-bold text-[#4A7995] font-winky"
+              >
+                Automatisation workflow
+              </h3>
+              <p class="text-xs md:text-lg text-[#2D2D2D] font-montserrat">
+                Créez des workflows personnalisés sans code avec interface
+                drag-and-drop.
+              </p>
+            </div>
+
+            <!-- Slider fixed at bottom -->
+            <div class="absolute bottom-4 left-0 w-full px-[10px] md:px-5">
+              <div class="relative w-full flex items-center space-x-2">
+                <span
+                  class="text-[10px] md:text-lg font-medium text-[#4A7995] font-winky flex-shrink-0"
+                  >Efficacité</span
+                >
+                <div class="relative w-full">
+                  <input
+                    type="range"
+                    class="range-gradient slider"
+                    data-level="Maximale"
+                    value="90"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                  <span class="slider-label absolute -top-6">Maximale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cloud -->
+      <img
+        src="./img/connexion/nuit-0.png"
+        alt="cloud"
+        class="absolute -top-20 -right-20 md:-top-10 md:-right-40 z-20 max-w-[250px] md:min-w-[700px] reveal-right"
+      />
+      <img
+        src="./img/connexion/cloud-04.png"
+        alt="cloud"
+        class="absolute top-0 -left-10 md:top-30 md:-left-40 z-20 max-w-[130px] md:min-w-[500px] reveal-left"
+      />
+      <img
+        src="./img/connexion/nuit-0.png"
+        alt="cloud"
+        class="absolute top-60 left-[30%] md:top-[16%] md:left-50 z-20 max-w-[250px] md:min-w-[700px] reveal-left"
+      />
+      <img
+        src="./img/connexion/cloud-04.png"
+        alt="cloud"
+        class="absolute top-[30%] -right-10 md:top-[30%] md:right-20 z-20 max-w-[189px] md:min-w-[700px] reveal-right"
+      />
+      <img
+        src="./img/connexion/cloud-01.png"
+        alt="cloud"
+        class="absolute top-[40%] -left-10 md:top-[40%] md:-left-40 z-20 max-w-[189px] md:min-w-[700px] reveal-left"
+      />
+      <img
+        src="./img/connexion/cloud-01.png"
+        alt="cloud"
+        class="absolute top-[60%] -right-10 md:top-[60%] md:-right-40 z-20 max-w-[189px] md:min-w-[700px] reveal-right"
+      />
+      <img
+        src="./img/connexion/nuit-0.png"
+        alt="cloud"
+        class="absolute -bottom-20 -left-10 md:-bottom-30 md:-left-10 z-20 max-w-[189px] md:min-w-[300px] reveal-left"
+      />
+      <img
+        src="./img/connexion/cloud-04.png"
+        alt="cloud"
+        class="absolute -bottom-30 right-10 md:-bottom-10 md:left-[32%] z-50 max-w-[189px] md:min-w-[400px] reveal-right"
+      />
+      <img
+        src="./img/connexion/cloud-01.png"
+        alt="cloud"
+        class="absolute bottom-0 right-10 md:bottom-20 md:right-40 z-20 max-w-[189px] md:min-w-[300px] reveal-right"
+      />
+    </main>
+    <footer class="h-[175px] md:h-[403px] lg:h-[663px] relative">
+      <img src="./img/footers-bg.webp" alt="footer" class="w-full h-full" />
+      <a
+        href="#"
+        class="absolute bottom-5 left-1/2 -translate-x-1/2 text-[22px] font-bold font-winky text-white underline credit-footer"
+      >
+        Mentions légales
+      </a>
+    </footer>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      function animateGrid() {
+        const grid = document.getElementById("card-grid");
+        if (!grid) return; // Exit if the grid doesn't exist
+
+        const cards = Array.from(grid.children);
+
+        // Get the current screen width
+        const screenWidth = window.innerWidth;
+
+        // Determine cards per row based on screen width
+        const cardsPerRow = screenWidth >= 768 ? 4 : 2;
+
+        // Check if the animations are already set up to avoid duplicate triggers
+        if (grid.dataset.animationsInitialized) {
+          return;
+        }
+        grid.dataset.animationsInitialized = true;
+
+        // Split cards into "rows" based on the detected cardsPerRow
+        const rows = [];
+        for (let i = 0; i < cards.length; i += cardsPerRow) {
+          rows.push(cards.slice(i, i + cardsPerRow));
+        }
+
+        // Animate each row
+        rows.forEach((rowCards, rowIndex) => {
+          // Define the base animation direction for the whole row (desktop logic)
+          const baseDirection = rowIndex % 2 === 0 ? -100 : 100;
+
+          // Iterate through each card in the row
+          rowCards.forEach((card, cardIndex) => {
+            let direction = baseDirection;
+
+            // Apply specific mobile logic if the screen is small
+            if (screenWidth < 768) {
+              // If the card is in the left column (even index, starting from 0)
+              if (cardIndex % 2 === 0) {
+                direction = -100; // Slide from left
+              } else {
+                // If the card is in the right column (odd index)
+                direction = 100; // Slide from right
+              }
+            }
+
+            gsap.from(card, {
+              x: direction,
+              opacity: 0,
+              duration: 1.2,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: card, // Each card has its own trigger
+                start: "top 85%",
+                end: "bottom 50%",
+                toggleActions: "play none none reverse",
+              },
+            });
+          });
+        });
+      }
+
+      // A helper function to kill all tweens and re-initialize
+      function refreshAnimations() {
+        gsap.killTweensOf("*");
+        const grid = document.getElementById("card-grid");
+        if (grid) {
+          delete grid.dataset.animationsInitialized;
+        }
+        animateGrid();
+      }
+
+      // Initial animation on page load
+      refreshAnimations();
+
+      // Recalculate on resize
+      let resizeTimeout;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(refreshAnimations, 250);
+      });
+    </script>
+    <!-- footer animation -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from("footer", {
+        y: 100, // start 100px below
+        autoAlpha: 0, // invisible at first
+        duration: 1, // animation duration
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: "footer", // start animation when footer enters viewport
+          start: "top 90%", // when top of footer is 90% from top of viewport
+          toggleActions: "play none none none", // play only once
+        },
+      });
+    </script>
+    <script>
+      /* ===== Card Tilt Effect ===== */
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.classList.remove("tilt-out");
+          void card.offsetWidth; // restart animation
+          card.classList.add("tilt-in");
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.classList.remove("tilt-in");
+          void card.offsetWidth; // restart animation
+          card.classList.add("tilt-out");
+        });
+      });
+
+      /* ===== Multiple Slider Setup ===== */
+      const levelColors = {
+        Moyenne: "#FF9500",
+        Élevée: "#669C2B",
+        Maximale: "#06F",
+      };
+
+      // === Exclusion List (h3 titles that should NOT show lock/blur) ===
+      const excludedTitles = ["Optimisation Avancée"];
+
+      // Select all cards
+      document.querySelectorAll(".card").forEach((card) => {
+        const slider = card.querySelector(".slider");
+        const label = card.querySelector(".slider-label");
+        const titleEl = card.querySelector("h3");
+
+        const lockEl = card.querySelector("img[alt='lock']")?.parentElement;
+        const blurEl = card.querySelector(".bg-cover-blur");
+
+        // ===== Lock + Blur Exclusion =====
+        if (titleEl && excludedTitles.includes(titleEl.textContent.trim())) {
+          if (lockEl) lockEl.style.display = "none"; // hide lock overlay
+          if (blurEl) blurEl.style.display = "none"; // hide blur background
+        }
+
+        // ===== Slider Label + Thumb Setup =====
+        if (slider && label) {
+          const level = slider.dataset.level;
+          const value = parseFloat(slider.value);
+
+          const min = parseFloat(slider.min) || 0;
+          const max = parseFloat(slider.max) || 100;
+          const percent = ((value - min) * 100) / (max - min);
+
+          label.style.left = `calc(${percent}%)`;
+          label.textContent = level;
+
+          slider.style.setProperty("--thumb-inner", levelColors[level]);
+        }
+      });
+    </script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

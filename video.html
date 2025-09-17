@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+
+    <!-- favicon  -->
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add the global transition CSS -->
+    <link rel="stylesheet" href="styles/global-transitions.css" />
+
+    <!-- Add the global transition script FIRST, before any other scripts -->
+    <script src="js/global-transitions.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="full-bg page-transition">
+    <!-- header -->
+    <header class="pt-[66px] md:pt-[60px] md:pb-[228px] relative">
+      <div class="w-full md:max-w-[1152px] mx-auto px-5 md:px-0">
+        <!-- logo -->
+        <a href="index.html" class="absolute top-10 left-1/2 -translate-x-1/2">
+          <img
+            src="./img/cash-logo-white.svg"
+            alt="cash logo white"
+            class="w-[97px] md:w-[218px]"
+          />
+        </a>
+        <!-- button -->
+        <a
+          href="index.html"
+          class="finish-btn px-8 py-[10px] inline-flex flex-row items-center rounded-full gradiant-btn text-[#312C00] text-xs lg:text-lg font-semibold font-poppins shadow-md gap-[5px] lg:gap-4 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9"
+            height="15"
+            viewBox="0 0 9 15"
+            fill="none"
+          >
+            <path
+              d="M7.25 1.25L1 7.5L7.25 13.75"
+              stroke="#2D2D2D"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Retour
+        </a>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- video -->
+      <section class="py-[82px]">
+        <div
+          class="w-full md:max-w-[1008px] mx-auto px-5 md:px-0 relative overflow-hidden md:overflow-visible"
+        >
+          <div class="max-w-[477px] mx-auto relative">
+            <h1
+              class="text-center text-2xl md:text-[40px] font-black text-white relative z-20 font-merriweather"
+            >
+              Qu’est ce que
+              <span class="text-[#0D0C20] myOPIhOne">My OPI ?</span>
+            </h1>
+            <img
+              src="./img/green-squre.png"
+              alt="green"
+              class="absolute -top-1 right-16 md:-top-2 md:-right-0 z-0 w-[115px] md:w-[200px]"
+              id="green-squre"
+            />
+            <img
+              src="./img/arrow-bellow.svg"
+              alt="arrow"
+              class="absolute -bottom-8 -right-14"
+            />
+          </div>
+
+          <!-- video container -->
+          <div
+            id="video-container"
+            class="relative w-full bg-black rounded-[25px] overflow-hidden shadow-2xl cursor-pointer aspect-video mt-[92px] mb-[45px]"
+            data-video-id="VIDEO_ID_HERE"
+          >
+            <img
+              src="./img/yt-2nd.png"
+              alt="Video Thumbnail"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div
+              id="play-button-overlay"
+              class="absolute inset-0 flex items-center justify-center"
+            ></div>
+          </div>
+          <!-- cloud -->
+          <img
+            src="./img/video/vd-cloud-01.png"
+            alt="cloud"
+            class="absolute top-14 -left-10 md:-top-5 md:-left-40 z-10 max-w-[189px] md:max-w-[450px] reveal-left"
+          />
+          <img
+            src="./img/video/vd-cloud-02.png"
+            alt="cloud"
+            class="absolute -bottom-5 -right-5 md:-bottom-50 md:-right-34 z-10 max-w-[197px] md:max-w-[528px] reveal-right"
+          />
+        </div>
+      </section>
+      <!-- opi -->
+      <section class="pb-[127px]">
+        <div
+          class="w-full md:max-w-[776px] mx-auto px-5 md:px-0 flex flex-col items-center md:items-start"
+        >
+          <h2
+            class="relative inline-block text-center md:text-start text-2xl md:text-[36px] font-black font-merriweather text-[#2D2D2D] before:content-[''] before:absolute before:-top-1 before:-left-4 before:w-[108px] before:h-[42px] md:before:w-[160px] md:before:h-[80px] before:bg-[url('../img/green-squre.png')] before:bg-no-repeat before:bg-contain before:-z-10"
+          >
+            My OPI
+          </h2>
+          <p
+            class="text-base md:text-2xl font-normal md:font-semibold text-white pt-[28px] pb-[56px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="w-[240px] md:w-[512px] mx-auto">
+            <button
+              class="px-8 py-[6px] md:py-[32px] w-full flex items-center justify-center rounded-full gradiant-btn text-[#2D2D2D] text-base lg:text-[36px] font-black font-merriweather shadow-md cursor-pointer"
+            >
+              Télécharger la doc
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="h-[175px] md:h-[403px] lg:h-[663px] relative">
+      <img
+        src="./img/footers-bg.webp"
+        alt="footer"
+        class="w-full h-full footer-bg"
+      />
+      <span
+        class="absolute bottom-5 left-1/2 -translate-x-1/2 text-[22px] font-bold font-winky text-white underline credit-footer"
+      >
+        Mentions légales
+      </span>
+    </footer>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- footer animation -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from("footer", {
+        y: 100, // start 100px below
+        autoAlpha: 0, // invisible at first
+        duration: 1, // animation duration
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: "footer", // start animation when footer enters viewport
+          start: "top 90%", // when top of footer is 90% from top of viewport
+          toggleActions: "play none none none", // play only once
+        },
+      });
+    </script>
+    <!-- video -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const videoContainer = document.getElementById("video-container");
+        const playButtonOverlay = document.getElementById(
+          "play-button-overlay"
+        );
+        const videoId = videoContainer.dataset.videoId;
+
+        // Example: check login state (replace this with your actual login logic)
+        const isLoggedIn = false; // ❌ change dynamically
+
+        if (isLoggedIn) {
+          // Replace overlay with lock image
+          playButtonOverlay.innerHTML = `
+        <img src="./img/yt-2nd-lock.png" 
+             alt="Locked Video" 
+             class="w-full h-full object-cover rounded-[30px]" />
+      `;
+
+          // Disable click → show locked state
+          playButtonOverlay.style.cursor = "not-allowed";
+          playButtonOverlay.addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("You must be logged in to play this video.");
+          });
+        } else {
+          // Normal YouTube play behavior
+          if (videoId && playButtonOverlay) {
+            playButtonOverlay.addEventListener("click", () => {
+              // Create YouTube iframe
+              const iframe = document.createElement("iframe");
+              iframe.setAttribute("allowfullscreen", "");
+              iframe.setAttribute("frameborder", "0");
+              iframe.setAttribute("allow", "autoplay; encrypted-media");
+              iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+
+              // Full size
+              iframe.style.width = "100%";
+              iframe.style.height = "100%";
+              iframe.style.position = "absolute";
+              iframe.style.top = "0";
+              iframe.style.left = "0";
+
+              // Replace thumbnail with iframe
+              videoContainer.innerHTML = "";
+              videoContainer.appendChild(iframe);
+              videoContainer.classList.remove("cursor-pointer");
+            });
+          }
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const textEl = document.querySelector(".myOPIhOne");
+        const imgEl = document.getElementById("green-squre");
+        const parent = textEl.closest(".relative"); // parent wrapper div
+
+        function adjustImage() {
+          const textRect = textEl.getBoundingClientRect();
+          const parentRect = parent.getBoundingClientRect();
+
+          // Calculate text position relative to parent
+          const relTop = textRect.top - parentRect.top;
+          const relLeft = textRect.left - parentRect.left;
+
+          // Add extra size (10px wider, 3px taller)
+          const newWidth = textRect.width + 10;
+          const newHeight = textRect.height + 3;
+
+          // Apply size & position
+          imgEl.style.width = newWidth + "px";
+          imgEl.style.height = newHeight + "px";
+
+          imgEl.style.position = "absolute";
+          imgEl.style.top = relTop + textRect.height / 2 - newHeight / 2 + "px";
+          imgEl.style.left = relLeft + textRect.width / 2 - newWidth / 2 + "px";
+          imgEl.style.zIndex = 0;
+        }
+
+        // Run on load + resize
+        window.addEventListener("load", adjustImage);
+        window.addEventListener("resize", adjustImage);
+      });
+    </script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
