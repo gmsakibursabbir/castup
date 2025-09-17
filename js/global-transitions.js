@@ -112,6 +112,30 @@
     }, transitionDuration);
   }
 
+  // ===== Handle browser back/forward navigation =====
+  function handleBrowserNavigation() {
+    console.log("Browser navigation detected");
+    
+    // Clean up any stuck preloaders
+    const overlay = document.getElementById("gradient-transition-overlay");
+    const bg = document.getElementById("initial-preloader-bg");
+    
+    if (overlay) {
+      overlay.remove();
+    }
+    if (bg) {
+      bg.remove();
+    }
+    
+    // Reset transition state
+    isTransitioning = false;
+    
+    // Clean navigation flags
+    sessionStorage.removeItem("navigating");
+    
+    // Don't remove returning-to-index flag - let destination page handle it
+  }
+
   // ===== Show preloader on fresh load =====
   function showStripePreloader() {
     const path = window.location.pathname;
@@ -234,7 +258,12 @@
   // ===== Handle page entrance =====
   function handlePageEntrance() {
     const fromTransition = sessionStorage.getItem("navigating") === "true";
-    if (fromTransition) {
+    const fromBrowserNav = performance.navigation && performance.navigation.type === 2; // Back/Forward
+    const fromPageshow = sessionStorage.getItem("browser-nav") === "true";
+    
+    console.log("Page entrance - fromTransition:", fromTransition, "fromBrowserNav:", fromBrowserNav, "fromPageshow:", fromPageshow);
+    
+    if (fromTransition && !fromBrowserNav && !fromPageshow) {
       createInstantBackground();
       const overlay = document.createElement("div");
       overlay.id = "gradient-transition-overlay";
@@ -256,17 +285,63 @@
         });
       }, 100);
     } else {
+      // Clean up any stuck preloaders from browser navigation
       const bg = document.getElementById("initial-preloader-bg");
+      const overlay = document.getElementById("gradient-transition-overlay");
       if (bg) bg.remove();
+      if (overlay) overlay.remove();
     }
+    
+    // Clean up flags
     sessionStorage.removeItem("navigating");
+    sessionStorage.removeItem("browser-nav");
   }
 
   // ===== Init =====
   function init() {
     injectPreloaderStyles();
     document.addEventListener("click", handleLinkClick);
-    if (sessionStorage.getItem("navigating") === "true") {
+    
+    // Handle browser back/forward navigation
+    window.addEventListener("pageshow", function(event) {
+      if (event.persisted) {
+        console.log("Page restored from cache (back/forward)");
+        sessionStorage.setItem("browser-nav", "true");
+        handleBrowserNavigation();
+      }
+    });
+    
+    // Handle browser navigation using Navigation API if available
+    if ('navigation' in window) {
+      navigation.addEventListener('navigate', function(event) {
+        if (!event.userInitiated || event.info?.source !== 'script') {
+          console.log("Browser navigation detected via Navigation API");
+          handleBrowserNavigation();
+        }
+      });
+    }
+    
+    // Fallback: Handle popstate (back/forward)
+    window.addEventListener("popstate", function(event) {
+      console.log("Popstate detected - browser navigation");
+      handleBrowserNavigation();
+    });
+    
+    // Handle page visibility changes (helps with stuck preloaders)
+    document.addEventListener("visibilitychange", function() {
+      if (!document.hidden) {
+        // Page became visible - clean up any stuck preloaders
+        setTimeout(() => {
+          const overlay = document.getElementById("gradient-transition-overlay");
+          const bg = document.getElementById("initial-preloader-bg");
+          if (overlay) overlay.remove();
+          if (bg) bg.remove();
+        }, 100);
+      }
+    });
+    
+    if (sessionStorage.getItem("navigating") === "true" || 
+        sessionStorage.getItem("browser-nav") === "true") {
       handlePageEntrance();
     } else {
       showStripePreloader();
